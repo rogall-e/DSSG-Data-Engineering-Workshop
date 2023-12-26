@@ -1,10 +1,13 @@
 tasks:
-  - init: |
-      pip install -r requirements.txt
+  - name: airbyte
+    init: |
       git clone https://github.com/airbytehq/airbyte.git
       cd airbyte
     command: |
       ./run-ab-platform.sh > /dev/null 2>&1 &
+  - name: pip
+    command: |
+      pip install -r requirements.txt
 ports:
   - port: 8000
     
