@@ -4,13 +4,14 @@ tasks:
       git clone https://github.com/airbytehq/airbyte.git
       mkdir airbyte_local
       cd airbyte
-      sed -i~ '/^LOCAL_ROOT=/s/=.*/="/workspace/DSSG-Data-Engineering-Workshop/airbyte_local"/' .env
-      sed -i~ '/^LOCAL_DOCKER_MOUNT=/s/=.*/="/workspace/DSSG-Data-Engineering-Workshop/airbyte_local"/' .env
+      sed -i 's#^LOCAL_ROOT=/tmp/airbyte_local#LOCAL_ROOT=/workspace/DSSG-Data-Engineering-Workshop/airbyte_local#' .env
+      sed -i 's#^LOCAL_DOCKER_MOUNT=/tmp/airbyte_local#LOCAL_DOCKER_MOUNT=/workspace/DSSG-Data-Engineering-Workshop/airbyte_local#' .env
+      sed -i 's#^HACK_LOCAL_ROOT_PARENT=/tmp#HACK_LOCAL_ROOT_PARENT=/workspace/DSSG-Data-Engineering-Workshop#' .env
     command: |
       ./run-ab-platform.sh
   - name: python
     command: |
-      pyenv install 3.11.3
+      pyenv install 3.11.3 -f
       pyenv global 3.11.3
       pip install -r requirements.txt
       duckdb airbyte_local/database.duckdb
