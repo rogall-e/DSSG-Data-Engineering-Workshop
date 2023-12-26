@@ -1,5 +1,5 @@
 pandas
 SQLAlchemy
 jupyter
-duckdb
+duckdb==0.9.2
 dbt-duckdb
