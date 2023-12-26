@@ -4,7 +4,7 @@ tasks:
       git clone https://github.com/airbytehq/airbyte.git
       cd airbyte
     command: |
-      ./run-ab-platform.sh > /dev/null 2>&1 &
+      ./run-ab-platform.sh
   - name: pip
     command: |
       pip install -r requirements.txt
