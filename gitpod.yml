@@ -1,5 +1,6 @@
 tasks:
   - init: |
+      pip install -r requirements.txt
       git clone https://github.com/airbytehq/airbyte.git
       cd airbyte
     command: |
