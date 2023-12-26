@@ -1,5 +1,5 @@
-pandas==1.5.1
-SQLAlchemy==1.4.42
-jupyterlab==3.5.0
-duckdb==0.5.1
+pandas
+SQLAlchemy
+jupyter
+duckdb
 dbt-duckdb
