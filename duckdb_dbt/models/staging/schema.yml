@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: staging
+    schema: main
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments

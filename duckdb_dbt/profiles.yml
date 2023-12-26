@@ -1,0 +1,7 @@
+duckdb_test:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../sampleDB.duckdb'
+      
