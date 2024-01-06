@@ -11,6 +11,9 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: Pokemon
       PGDATA: /var/lib/postgresql/data
+    networks:
+      - airbyte_internal
+      - airbyte_public
     volumes:
       # declare your mount volume /host/dir:/container/dir
       - ./pgdata:/var/lib/postgresql/data
@@ -20,6 +23,9 @@ services:
     restart: always
     ports:
       - 3002:3000
+    networks:
+      - airbyte_internal
+      - airbyte_public
     volumes:
       # declare your mount volume /host/dir:/container/dir
       - ./metabase-data:/metabase-data
