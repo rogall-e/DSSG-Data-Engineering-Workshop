@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'duckdb_test'
+name: 'pokemon_analytics'
 version: '1.0.0'
 config-version: 2
 
@@ -32,5 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  duckdb_test:
+  pokemon_analytics:
     materialized: table
+    intermediate:
+      +schema: intermediate
+    analytics:
+      +schema: analytics
