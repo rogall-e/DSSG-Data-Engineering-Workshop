@@ -10,11 +10,22 @@ tasks:
       sed -i 's#^HACK_LOCAL_ROOT_PARENT=/tmp#HACK_LOCAL_ROOT_PARENT=/workspace/DSSG-Data-Engineering-Workshop#' .env
     command: |
       docker compose up -d
+  - name: postgres and metabase
+    init: |
+      mkdir metabase-data
+      mkdir pgdata
+    command: |
+      docker compose up -d
   - name: python
     command: |
       pyenv install 3.11.3 -f
       pyenv global 3.11.3
+      python -m venv .venv
+      source .venv/bin/activate
       pip install -r requirements.txt
 ports:
-  - port: 8000
+  - name: airbyte
+    port: 8000
+  - name: metabase
+    port: 3002
     

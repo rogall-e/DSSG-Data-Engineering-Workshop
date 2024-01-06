@@ -1,0 +1,25 @@
+version: "3"
+services:
+
+  postgres-db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: Pokemon
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      # declare your mount volume /host/dir:/container/dir
+      - ./pgdata:/var/lib/postgresql/data
+
+  metabase:
+    image: metabase/metabase
+    restart: always
+    ports:
+      - 3002:3000
+    volumes:
+      # declare your mount volume /host/dir:/container/dir
+      - ./metabase-data:/metabase-data
