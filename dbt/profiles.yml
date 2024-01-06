@@ -3,5 +3,6 @@ duckdb_test:
   outputs:
     dev:
       type: duckdb
-      path: '../duckdb/pokemon.duckdb' 
+      path: '../duckdb/pokemon.duckdb'
+      schema: pokemon
       
