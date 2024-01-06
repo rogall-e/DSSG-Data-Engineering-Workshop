@@ -3,5 +3,5 @@ duckdb_test:
   outputs:
     dev:
       type: duckdb
-      path: '../pokemon.duckdb'
+      path: '../duckdb/pokemon.duckdb' 
       
