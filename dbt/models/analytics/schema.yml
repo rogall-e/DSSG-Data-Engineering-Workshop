@@ -18,8 +18,8 @@ models:
       desription: Total amount of donation in EUR.
     - name: average_donation_amount_eur_per_pokemon_donator
       desription: Average amount of donation in EUR per pokemon donator.
-- name: pokemon__donations__by_pokemon_type
-  description: Table contains information about all donations aggregated by pokemon type.
+- name: pokemon__donations__time_series
+  description: Table contains information about daily donations aggregated accross all pokemon.
   columns:
     - name: donation_date
       description: Date of a certain donation (YYYY-MM-DD).
@@ -32,8 +32,8 @@ models:
       description: Total amount of donation in EUR.
     - name: average_donation_amount_eur_per_pokemon_donator
       description: Average amount of donation in EUR per pokemon donator.
-- name: pokemon__donations__time_series
-  description: Table contains information about daily donations aggregated accross all pokemon.
+- name: pokemon__donations__by_pokemon_type
+  description: Table contains information about donations aggregated by pokemon type.
   columns:
     - name: pokemon_type
       description: Primary type of a pokemon (e.g. 'fire', 'water', 'grass', etc.).
