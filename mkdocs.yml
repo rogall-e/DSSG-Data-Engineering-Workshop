@@ -1,0 +1,74 @@
+site_name: DSSG Data Engineering Workshop
+repo_name: Github Repo
+repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
+nav:
+  - Home: index.md
+  - Setup:
+      - Developer Setup: 0_getstarted/developer-setup.md
+  - Storing Data:
+      - Material: 1_store/material.md
+      - Assignment: 1_store/assignment.md
+  - Extract and Load:
+      - Material: 2_extract/material.md
+      - Assignment: 2_extract/assignment.md
+  - Transform:
+      - Material: 3_transform/material.md
+      - Assignment: 3_transform/assignment.md
+  - Analyze:
+      - Material: 4_analyze/material.md
+      - Assignment: 4_analyze/assignment.md
+theme:
+  language: en
+  name: material
+  font:
+    text: Inter
+    code: Roboto Mono
+  theme:
+    palette:
+      # Palette toggle for light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+
+      # Palette toggle for dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+  features:
+    - content.code.annotate
+    - content.tooltips
+    - content.code.copy
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.fol
+    - attr_list
+    - md_in_htmllow
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/browse/mermaid@10.2.2/dist/mermaid.min.js
+  - js/termynal.js
+  - js/custom.js
