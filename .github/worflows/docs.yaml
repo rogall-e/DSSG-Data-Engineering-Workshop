@@ -1,0 +1,44 @@
+name: deploy-docs-to-ghpages
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v4.7.0
+        with:
+          python-version: "3.11"
+
+      - name: Install poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 1.7.1
+          installer-parallel: true
+
+      - name: Poetry Cache
+        id: poetry-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pypoetry/virtualenvs
+            ~/.config/pypoetry
+          key: ${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('**docs/poetry.lock') }}
+
+      - name: Build
+        if: steps.poetry-cache.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction
+
+      - name: Deploy docs
+        run: poetry run mkdocs gh-deploy --force
