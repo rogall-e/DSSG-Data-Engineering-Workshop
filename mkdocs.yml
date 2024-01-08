@@ -3,6 +3,7 @@ repo_name: Github Repo
 repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
 nav:
   - Home: index.md
+  - Usecase: 0_getstarted/usecase.md
   - Setup:
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
@@ -43,11 +44,13 @@ theme:
     - content.tooltips
     - content.code.copy
     - navigation.indexes
+    - navigation.instant.progress
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - navigation.footer
     - search.highlight
     - search.share
     - search.suggest
