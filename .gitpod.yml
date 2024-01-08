@@ -1,16 +1,5 @@
 tasks:
-  - name: airbyte
-    init: |
-      git clone https://github.com/airbytehq/airbyte.git
-      mkdir airbyte_local
-      cd airbyte
-      ./run-ab-platform.sh -d
-      sed -i 's#^LOCAL_ROOT=/tmp/airbyte_local#LOCAL_ROOT=/workspace/DSSG-Data-Engineering-Workshop/airbyte_local#' .env
-      sed -i 's#^LOCAL_DOCKER_MOUNT=/tmp/airbyte_local#LOCAL_DOCKER_MOUNT=/workspace/DSSG-Data-Engineering-Workshop/airbyte_local#' .env
-      sed -i 's#^HACK_LOCAL_ROOT_PARENT=/tmp#HACK_LOCAL_ROOT_PARENT=/workspace/DSSG-Data-Engineering-Workshop#' .env
-    command: |
-      docker compose up -d
-  - name: postgres and metabase
+  - name: postgres, metabase and airbyte
     init: |
       mkdir metabase-data
       mkdir pgdata
