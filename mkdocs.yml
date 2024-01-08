@@ -7,17 +7,16 @@ nav:
   - Setup:
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
-      - Material: 1_store/material.md
-      - Assignment: 1_store/assignment.md
+      - Databases: 1_store/databases.md
+      - SQL: 1_store/sql.md
+      - DuckDB: 1_store/duckdb.md
   - Extract and Load:
       - Material: 2_extract/material.md
-      - Assignment: 2_extract/assignment.md
   - Transform:
       - Material: 3_transform/material.md
-      - Assignment: 3_transform/assignment.md
   - Analyze:
       - Material: 4_analyze/material.md
-      - Assignment: 4_analyze/assignment.md
+  - Outlook: 5_outlook/next-steps.md
 theme:
   language: en
   name: material
@@ -43,6 +42,7 @@ theme:
     - content.code.annotate
     - content.tooltips
     - content.code.copy
+    - content.tabs.link
     - navigation.indexes
     - navigation.instant.progress
     - navigation.sections
