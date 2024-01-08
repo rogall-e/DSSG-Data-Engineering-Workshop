@@ -24,7 +24,7 @@ jobs:
       - name: Install poetry
         uses: snok/install-poetry@v1
         with:
-          version: 1.3.9
+          version: 1.7.1
           installer-parallel: true
 
       - name: Poetry Cache
@@ -41,4 +41,4 @@ jobs:
         run: poetry install --no-interaction
 
       - name: Deploy docs
-        run: poetry run mkdocs gh-deploy -f ../mkdocs.yaml --force
+        run: poetry run mkdocs gh-deploy --force
