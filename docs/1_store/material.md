@@ -13,5 +13,6 @@ We know that you probably love your pandas. But today there will be no fluffy st
 
 ## The right tools for the right job.
 
-### Installing DuckDB
-
+### SQL Syntax in 5 minutes
+### Comparison to Pandas
+### Aggregations
