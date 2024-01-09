@@ -1,0 +1,57 @@
+version: 2
+models:
+- name: pokemon__masterdata__donations
+  description: Table contains information about each pokemon and donation metrics per pokemon.
+  columns:
+    - name: pokemon_id
+      desription: Unique identifier for a pokemon.
+      tests:
+        - unique
+        - not_null
+    - name: pokemon_name
+      desription: Name of the pokemon (english).
+    - name: pokemon_type
+      desription: Primary type of a pokemon (e.g. 'fire', 'water', 'grass', etc.).
+    - name: total_number_of_pokemon_donaters
+      desription: Total number of pokemon, that donated.
+    - name: total_amount_donated_eur
+      desription: Total amount of donation in EUR.
+    - name: average_donation_amount_eur_per_pokemon_donator
+      desription: Average amount of donation in EUR per pokemon donator.
+- name: pokemon__donations__time_series
+  description: Table contains information about daily donations aggregated accross all pokemon.
+  columns:
+    - name: donation_date
+      description: Date of a certain donation (YYYY-MM-DD).
+      tests:
+        - unique
+        - not_null
+    - name: total_number_of_pokemon_donaters
+      description: Total number of pokemon, that donated.
+    - name: total_amount_donated_eur
+      description: Total amount of donation in EUR.
+    - name: average_donation_amount_eur_per_pokemon_donator
+      description: Average amount of donation in EUR per pokemon donator.
+- name: pokemon__donations__by_pokemon_type
+  description: Table contains information about donations aggregated by pokemon type.
+  columns:
+    - name: pokemon_type
+      description: Primary type of a pokemon (e.g. 'fire', 'water', 'grass', etc.).
+      tests:
+        - unique
+        - not_null
+    - name: total_number_of_pokemon_donaters
+      description: Total number of pokemon, that donated.
+    - name: total_amount_donated_eur
+      description: Total amount of donation in EUR.
+    - name: average_donation_amount_eur_per_pokemon_donator
+      description: Average amount of donation in EUR per pokemon donator.
+- name: pokemon__donations__metrics
+  description: Table contains overall donation metrics accross all pokemon and days.
+  columns:
+    - name: total_number_of_pokemon_donaters
+      description: Total number of pokemon, that donated.
+    - name: total_amount_donated_eur
+      description: Total amount of donation in EUR.
+    - name: average_donation_amount_eur_per_pokemon_donator
+      description: Average amount of donation in EUR per pokemon donator.
