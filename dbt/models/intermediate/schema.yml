@@ -1,0 +1,16 @@
+version: 2
+models:
+- name: pokemon__donations__aggregated
+  description: Table contains aggregated information about daily donations per pokemon ID.
+  columns:
+    - name: pokemon_id
+      description: Unique identifier for a pokemon.
+      tests:
+        - unique
+        - not_null
+    - name: total_number_of_pokemon_donaters
+      description: Total number of pokemon, that donated.
+    - name: total_amount_donated_eur
+      description: Total amount of donation in EUR.
+    - name: average_donation_amount_eur_per_pokemon_donator
+      description: Average amount of donation in EUR per pokemon donator.
