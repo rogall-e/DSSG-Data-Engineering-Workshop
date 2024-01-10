@@ -349,8 +349,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: Pokemon
-      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: pokemon
     volumes:
       # declare your mount volume /host/dir:/container/dir
       - ${PWD}/pgdata:/var/lib/postgresql/data
