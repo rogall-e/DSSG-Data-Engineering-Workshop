@@ -26,7 +26,8 @@ When you look at the SQL Syntax you may notice that at least most simple things 
     CREATE TABLE Employees (
         ID INT,
         Name VARCHAR(50),
-        Age INT
+        Age INT,
+        Group VARCHAR(50)
     );
     ```
 
@@ -34,17 +35,17 @@ When you look at the SQL Syntax you may notice that at least most simple things 
 
     ``` Python
     import pandas as pd
-    df = pd.DataFrame(columns=['ID', 'Name', 'Age'])
+    df = pd.DataFrame(columns=['ID', 'Name', 'Age', 'Group'])
     ```
 
 #### 2.Inserting Data:
 === "SQL"
 
     ``` sql 
-    INSERT INTO Employees (ID, Name, Age)
-    VALUES (1, 'John', 30),
-          (2, 'Jane', 25),
-          (3, 'Smith', 35);
+    INSERT INTO Employees (ID, Name, Age, Group)
+    VALUES (1, 'John', 30, 'A'),
+          (2, 'Jane', 25, 'B'),
+          (3, 'Smith', 35, 'A');
     ```
 
 === "Pandas"
@@ -53,6 +54,7 @@ When you look at the SQL Syntax you may notice that at least most simple things 
     data = {'ID': [1, 2, 3],
             'Name': ['John', 'Jane', 'Smith'],
             'Age': [30, 25, 35]}
+            'Group': ['A', 'B', 'A']}
     df = pd.DataFrame(data)
     ```
 
@@ -70,4 +72,19 @@ When you look at the SQL Syntax you may notice that at least most simple things 
     ```
 
 #### 4. Aggregations
-### Comparison to Pandas
+=== "SQL"
+
+    ``` sql 
+    SELECT AVG(Age) as AverageAge, MAX(Age) as MaxAge
+    FROM Employees
+    GROUP BY Group;
+    ```
+
+=== "Pandas"
+
+    ``` Python
+    grouped_df = df.groupby('Group').mean()
+    ```
+
+You might already know all that 
+

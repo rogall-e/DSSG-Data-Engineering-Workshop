@@ -1,7 +1,4 @@
-# Developer Setup - 15min
-
-## The Repo
-
+# Developer Setup
 
 ## Gitpod Setup
 

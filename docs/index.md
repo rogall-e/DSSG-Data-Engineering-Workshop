@@ -1,6 +1,6 @@
-# DSFG - Data Engineering Workshop
+# DSSG - Data Engineering Workshop
 
-Welcome to the Data Engineering Workshop organized by the Data Science for Good (DSFG) community. This workshop is designed to provide a hands-on introduction to the data engineering workflow and tools. The intended audience is data scientists and analysts who are interested in learning how to build simple data pipelines and data warehouses.
+Welcome to the Data Engineering Workshop organized by the Data Science for Social Good (DSSG) community. This workshop is designed to provide a hands-on introduction to the data engineering workflow and tools. The intended audience is data scientists and analysts who are interested in learning how to build simple data pipelines and data warehouses.
 
 ## What to expect
 We are going to build a simple data pipeline that extracts data from a public API, stores it in a database, and makes it available for analysis. We will use a variety of tools to achieve this goal and we will discuss the advantages and disadvantages of each approach. The workshop will be a mix of presentations and hands-on exercises.

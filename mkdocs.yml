@@ -7,37 +7,47 @@ nav:
   - Setup:
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
+      - Datastores in Organizations: 1_store/data-in-orgs.md
       - Databases: 1_store/databases.md
-      - SQL: 1_store/sql.md
       - DuckDB: 1_store/duckdb.md
   - Extract and Load:
       - Material: 2_extract/material.md
   - Transform:
       - Material: 3_transform/material.md
   - Analyze:
-      - Material: 4_analyze/material.md
-  - Outlook: 5_outlook/next-steps.md
+      - Material: 4_analyze/dashboarding-tools.md
+  - Outlook:
+      - Applying your new skills: 5_outlook/applying-your-skills.md
+      - Learning More: 5_outlook/learning-more.md
 theme:
   language: en
   name: material
   font:
     text: Inter
     code: Roboto Mono
-  theme:
-    palette:
-      # Palette toggle for light mode
-      - media: "(prefers-color-scheme: light)"
-        scheme: default
-        toggle:
-          icon: material/brightness-7
-          name: Switch to dark mode
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
 
-      # Palette toggle for dark mode
-      - media: "(prefers-color-scheme: dark)"
-        scheme: slate
-        toggle:
-          icon: material/brightness-4
-          name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   features:
     - content.code.annotate
     - content.tooltips
