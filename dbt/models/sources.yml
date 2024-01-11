@@ -1,7 +1,7 @@
 version: 2
 sources:
   - name: pokemon_load
-    schema: pokemon_load
+    schema: public
     tables:
     - name: pokemon__masterdata
       description: Table contains information about each pokemon.
