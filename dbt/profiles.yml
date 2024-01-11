@@ -2,7 +2,11 @@ duckdb_test:
   target: dev
   outputs:
     dev:
-      type: duckdb
-      path: '../dbt/scripts/pokemon.duckdb'
+      type: postgres
+      host: localhost
+      port: 5432
+      dbname: pokemon
+      user: postgres
+      password: postgres
       schema: pokemon
       
