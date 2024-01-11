@@ -6,3 +6,5 @@ duckdb-engine
 jupysql
 mkdocs-material
 mkdocs
+dbt-core
+dbt-postgres
