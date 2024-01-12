@@ -1,4 +1,5 @@
 # Analyze - 30min
+
 This is the part where you get to play with the data. We will use a tool called Metabase to explore the data and answer some questions. **This part is not our main focus** as we assume that vizualizing data is not the main challenge for most of you.
 
 - Most Dashboarding tools work quite similar. They are a front end to your Data Warehouse and most of the time come with a lot of connectors to connect to various Data Stores via SQL. 
