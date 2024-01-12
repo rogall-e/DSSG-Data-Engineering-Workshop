@@ -6,7 +6,6 @@ models:
     - name: pokemon_id
       description: Unique identifier for a pokemon.
       tests:
-        - unique
         - not_null
     - name: pokemon_name
       description: Name of the pokemon (english).

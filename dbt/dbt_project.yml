@@ -34,9 +34,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   pokemon_analytics:
     materialized: table
-    staging:
+    1_staging:
       +schema: staging
-    mart:
+    2_mart:
       +schema: mart
-    analysis:
+    3_analysis:
       +schema: analysis
