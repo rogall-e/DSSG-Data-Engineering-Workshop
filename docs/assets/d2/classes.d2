@@ -1,0 +1,404 @@
+vars: {
+  kinesis-icon: https://icons.terrastruct.com/aws%2FAnalytics%2FAmazon-Kinesis.svg
+  s3-icon: https://icons.terrastruct.com/aws%2FStorage%2FAmazon-Simple-Storage-Service-S3_Bucket-with-Objects_light-bg.svg
+  dynamo-icon: https://icons.terrastruct.com/aws%2FDatabase%2FAmazon-DynamoDB.svg
+  emr-icon: https://icons.terrastruct.com/aws%2FAnalytics%2FAmazon-EMR.svg
+  glue-crawler-icon: https://icons.terrastruct.com/aws%2FAnalytics%2FAWS-Glue_Crawlers_light-bg.svg
+  athena-icon: https://icons.terrastruct.com/aws%2FAnalytics%2FAmazon-Athena.svg
+  alarm-icon: https://icons.terrastruct.com/essentials%2F213-alarm.svg
+  aws-cloud-icon: https://icons.terrastruct.com/aws%2F_Group%20Icons%2FAWS-Cloud_light-bg.svg
+  cloudwatch-icon: https://icons.terrastruct.com/aws%2FManagement%20&%20Governance%2FAmazon-CloudWatch.svg
+  cloudwatch-alarm-icon: https://icons.terrastruct.com/aws%2FManagement%20&%20Governance%2FAmazon-CloudWatch_Alarm_light-bg.svg
+  cdk-icon: https://icons.terrastruct.com/aws%2FDeveloper%20Tools%2FAWS-Cloud-Development-Kit.svg
+  sqs-icon: https://icons.terrastruct.com/aws%2FApplication%20Integration%2FAmazon-Simple-Queue-Service-SQS.svg
+  firehose-icon: https://icons.terrastruct.com/aws%2FAnalytics%2FAmazon-Kinesis-Data-Firehose.svg
+  glue-icon: https://icons.terrastruct.com/aws%2FAnalytics%2FAWS-Glue_Data-catalog_light-bg.svg
+  lpm-icon: https://icons.terrastruct.com/azure%2FIdentity%20Service%20Color%2FConditional%20Access.svg
+  postgres-icon: https://icons.terrastruct.com/dev%2Fpostgresql.svg
+  postgres-words-icon: https://icons.terrastruct.com/dev%2Fpostgresql-words.svg
+  db-icon: https://icons.terrastruct.com/aws%2FDatabase%2FDatabase_light-bg.svg
+  sns-icon: https://icons.terrastruct.com/aws%2FApplication%20Integration%2FAmazon-Simple-Notification-Service-SNS.svg
+  metrics-icon: https://icons.terrastruct.com/azure%2FManagement%20and%20Governance%20Service%20Color%2FMetrics.svg
+  eventbridge-bus-icon: https://icons.terrastruct.com/aws%2FApplication%20Integration%2FAmazon-EventBridge_Default-event-bus_resource-icon_light-bg.svg
+  step-functions-icon: https://icons.terrastruct.com/aws%2FApplication%20Integration%2FAWS-Step-Functions.svg
+  github-icon: https://icons.terrastruct.com/dev%2Fgithub.svg
+  vpc-icon: https://icons.terrastruct.com/aws%2FNetworking%20&%20Content%20Delivery%2FAmazon-VPC_light-bg.svg
+  route-table-icon: https://icons.terrastruct.com/aws%2FNetworking%20&%20Content%20Delivery%2FAmazon-Route-53_Route-Table_light-bg.svg
+  security-group-icon: https://icons.terrastruct.com/aws%2FNetworking%20&%20Content%20Delivery%2FAmazon-Route-53_Hosted-Zone_light-bg.svg
+  ec2-icon: https://icons.terrastruct.com/aws%2FCompute%2FAmazon-EC2_light-bg.svg
+  aurora-icon: https://icons.terrastruct.com/aws%2FDatabase%2FAmazon-Aurora_light-bg.svg
+  event-bridge-icon: https://icons.terrastruct.com/aws%2FApplication%20Integration%2FAmazon-EventBridge.svg
+  lambda-icon: https://icons.terrastruct.com/aws%2FCompute%2FAWS-Lambda.svg
+  ecs-icon: https://icons.terrastruct.com/aws%2FCompute%2FAmazon-Elastic-Container-Service.svg
+  graph-icon: https://icons.terrastruct.com/essentials%2F092-graph%20bar.svg
+  eks-icon: https://icons.terrastruct.com/aws%2FCompute%2FAmazon-Elastic-Kubernetes-Service.svg
+  slack-icon: https://icons.terrastruct.com/dev%2Fslack.svg
+  developer-icon: https://icons.terrastruct.com/essentials%2F005-programmer.svg
+  file-icon: https://icons.terrastruct.com/essentials%2F257-file.svg
+  aws-icon: https://icons.terrastruct.com/dev%2Famazonwebservices.svg
+  dbt-icon: ../img/icons/dbt-icon.png
+  airflow-icon: ../img/assets/img/icons/airflow-icon.png
+  report-icon: ../img/assets/img/icons/report.png
+  branch-icon: ../img/assets/img/icons/branch.png
+  kpi-icon: ../img/icons/kpis.png
+  code-review-icon: ../img/assets/img/icons/code-review.png
+  loupe-icon: ../img/assets/img/icons/loupe.png
+  yaml-icon: ../img/assets/img/icons/yaml.png
+  user-icon: ../img/assets/img/icons/user.png
+  multi-user-icon: ../img/assets/img/icons/multi-user.png
+  merge-icon: ../img/assets/img/icons/merge.png
+  s3-log-icon: ../img/assets/img/icons/s3-log.png
+}
+
+# Class Definitions
+# -----------------
+
+classes: {
+  # Syntactic Classes
+  # -------------------
+
+  start: {
+    shape: circle
+  }
+
+  end: {
+    shape: circle
+    style: {
+      double-border: true
+    }
+  }
+
+  event: {
+    shape: step
+  }
+
+  highlight: {
+    style: {
+      stroke: "#F69E03"
+    }
+  }
+
+  process: {
+    style: {border-radius: 5}
+    width: 200
+  }
+
+  dashed: {
+    style: {stroke-dash: 3}
+  }
+
+  gray: {
+    style: {
+      stroke: "gray"
+    }
+  }
+
+  empty: {
+    label: ""
+    style: {
+      fill: transparent
+      stroke: transparent
+    }
+  }
+
+  process: {
+    style: {border-radius: 5}
+  }
+
+  # Roles
+  # -------------------
+
+  dp: {
+    label: DP Team
+  }
+
+  dp-admin: {
+    label: DP Admin
+  }
+
+  pe-admin: {
+    label: PE Admin
+  }
+
+  # AWS Service Classes
+  # -------------------
+
+  aws-cloud: {
+    shape: image
+    icon: ${aws-cloud-icon}
+  }
+
+  glue-crawler: {
+    shape: image
+    icon: ${glue-crawler-icon}
+  }
+
+  kinesis: {
+    shape: image
+    icon: ${kinesis-icon}
+  }
+
+  firehose: {
+    shape: image
+    icon: ${firehose-icon}
+  }
+
+  s3: {
+    shape: image
+    icon: ${s3-icon}
+  }
+
+  multi-s3: {
+    icon: ${s3-icon}
+    style: {multiple: true}
+  }
+
+  glue-catalog: {
+    shape: image
+    icon: ${glue-icon}
+  }
+
+  athena: {
+    shape: image
+    icon: ${athena-icon}
+  }
+
+  sf: {
+    shape: image
+    icon: ${step-functions-icon}
+  }
+
+  sns: {
+    shape: image
+    icon: ${sns-icon}
+  }
+
+  sqs: {
+    shape: queue
+    icon: ${sqs-icon}
+  }
+
+  ec2: {
+    shape: image
+    icon: ${ec2-icon}
+  }
+
+  aurora: {
+    shape: image
+    icon: ${aurora-icon}
+  }
+
+  event-bridge: {
+    shape: image
+    icon: ${event-bridge-icon}
+  }
+
+  event-bridge-bus: {
+    shape: image
+    icon: ${eventbridge-bus-icon}
+  }
+
+  lambda: {
+    shape: image
+    icon: ${lambda-icon}
+  }
+
+  cloudwatch: {
+    shape: image
+    icon: ${cloudwatch-icon}
+  }
+
+  cloudwatch-alarm: {
+    shape: image
+    icon: ${cloudwatch-alarm-icon}
+  }
+
+  emr: {
+    shape: image
+    icon: ${emr-icon}
+  }
+
+  ecs: {
+    shape: image
+    icon: ${ecs-icon}
+  }
+
+  eks: {
+    shape: image
+    icon: ${eks-icon}
+  }
+
+  cdk: {
+    shape: image
+    icon: ${cdk-icon}
+  }
+
+  # Container Classes
+  # ---------------------
+
+  lambda-container: {
+    label: "Lambda"
+    icon: ${lambda-icon}
+  }
+
+  ecs-container: {
+    label: "ECS"
+    icon: ${ecs-icon}
+  }
+
+  eks-container: {
+    label: "EKS"
+    icon: ${eks-icon}
+  }
+
+  emr-container: {
+    label: "EMR"
+    icon: ${emr-icon}
+  }
+
+  cloudwatch-container: {
+    icon: ${cloudwatch-icon}
+    label: "CloudWatch"
+  }
+
+  event-bridge-container: {
+    icon: ${event-bridge-icon}
+    label: EventBridge
+  }
+
+  # Other Service Classes
+  # ---------------------
+
+  airflow: {
+    shape: image
+    icon: ${airflow-icon}
+  }
+
+  postgres: {
+    shape: image
+    icon: ${postgres-icon}
+  }
+
+  db: {
+    shape: image
+    icon: ${db-icon}
+  }
+
+  dynamo-db: {
+    shape: image
+    icon: ${dynamo-icon}
+  }
+
+  dbt: {
+    shape: image
+    icon: ${dbt-icon}
+  }
+
+  vpc: {
+    shape: image
+    icon: ${vpc-icon}
+  }
+
+  security-group: {
+    shape: image
+    icon: ${security-group-icon}
+    style: {
+      stroke: purple
+      font-color: purple
+      fill: "#e1d5e7"
+    }
+  }
+
+  route-table: {
+    shape: image
+    icon: ${route-table-icon}
+  }
+
+  metrics: {
+    shape: image
+    icon: ${metrics-icon}
+  }
+
+  dashboard: {
+    shape: image
+    icon: ${graph-icon}
+  }
+
+  report: {
+    shape: image
+    icon: ${report-icon}
+  }
+
+  branch: {
+    shape: image
+    icon: ${branch-icon}
+  }
+
+  github: {
+    shape: image
+    icon: ${github-icon}
+  }
+
+  kpis: {
+    shape: image
+    icon: ${kpi-icon}
+  }
+
+  alarm: {
+    shape: image
+    icon: ${alarm-icon}
+  }
+
+  slack: {
+    shape: image
+    icon: ${slack-icon}
+  }
+
+  developer: {
+    shape: image
+    icon: ${developer-icon}
+  }
+
+  review: {
+    shape: image
+    icon: ${code-review-icon}
+  }
+
+  loupe: {
+    shape: image
+    icon: ${loupe-icon}
+  }
+
+  file: {
+    shape: image
+    icon: ${file-icon}
+  }
+
+  yaml: {
+    shape: image
+    icon: ${yaml-icon}
+  }
+
+  merge: {
+    shape: image
+    icon: ${merge-icon}
+  }
+
+  large-font: {
+    style: {
+      font-size: 22
+    }
+  }
+
+  user: {
+    shape: image
+    icon: ${user-icon}
+    height: 100
+  }
+
+  multi-user: {
+    shape: image
+    icon: ${multi-user-icon}
+    height: 100
+  }
+}

@@ -1,11 +1,28 @@
-# The Evolution of a Data Org
-I am sketching a totally arthificial and simplified evolution of a data organisation. The goal is to show the different phases of data engineering and the different challenges that come with it. The phases are not strictly separated and most likely there are many more phases and variations of the ones I am describing. The phases are also not necessarily linear and can be repeated.
+# The Evolution of Data Orgs
+
+!!! note "Disclaimer"
+    
+    I am sketching a totally artificial and simplified evolution of differen stages of  data in organisations. The goal is to show the different phases of data engineering and the different challenges that come with it.
 
 
-### Small (Non Tech) Organisations (1-50 people)
-Assuming the core business of an organisation is not data! Then most potentially at the start of an organization the focus is not on data related things. From the beginning there was data gathering happening but most potentially in a mostly non-systematic way that was highly dependend on the invividuals. Some functions might have been using Excel or Google Sheets to store data and report it to the management or other functions. The data gathering was most likely motivated from a operations perspective.
+=== "Small Orgs - No Data Person"
+    - Analytical needs are solved via direct communication
+    - Data is stored in a decentralized fashion, mostly in spreadsheets
 
+    ![small-orgs-img](../assets/img/small-orgs.png)
 
-### Big/Corporate (Non Tech) Organisations (500+ people)
+=== "Small Orgs - One Data Person"
+    - Identified need for bringing data together and analyzing aggregates of it
+    - One centralized storage is set up
+    - Data is exported manually and imported into a central storage. Often still file based.
+    - The standardization is often driven from the cost side (e.g. Analyzing Marketing)
 
-![big-corp-xkcd](https://imgs.xkcd.com/comics/machine_learning_2x.png)
+    ![small-data-orgs-img](../assets/img/small-data-orgs.png)
+
+=== "Decentralized Tech Orgs"
+    - Multiple Tech and Non Tech Domains having different data needs
+    - Data is not used for analytical purposes only.
+    - Products are build on top of data. Circular dependency between data and product.
+    - Teams own their own data pipelines and storage.
+
+    ![mid-data-orgs-img](../assets/img/decentralized-data-org.png)

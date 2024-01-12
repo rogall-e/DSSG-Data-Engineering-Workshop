@@ -4,14 +4,12 @@ repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
 nav:
   - Getting Started:
       - Overview: 0_getstarted/overview.md
-      - Expectations: 0_getstarted/expactations.md
+      - Expectations: 0_getstarted/expectations.md
       - Usecase: 0_getstarted/usecase.md
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
       - Data Stores in Organizations: 1_store/data-in-orgs.md
       - Evolution of a Data-Org: 1_store/data-evolution.md
-      - Data in Small Orgs: 1_store/data-in-small-orgs.md
-      - Data in Bigger Orgs: 1_store/data-in-big-orgs.md
       - Side Effects of Storing Data: 1_store/sideeffects-of-storing-data.md
       - Databases: 1_store/databases.md
       - Why SQL is great: 1_store/why-sql-is-great.md

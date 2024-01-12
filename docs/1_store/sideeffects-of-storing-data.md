@@ -16,8 +16,6 @@ In the EU we have the GDPR. This is a law that regulates how data can be stored 
     Luckily your are not requested to have automated procedures for all of this in place from the beginnnig. So as long as you have a process in place that allows you to do this manually you are fine. But you should consider this when you start building your data warehouse and move into automation as soon as possible.
 
 
-<!-- ![xkcd-privacy](https://imgs.xkcd.com/comics/privacy_opinions_2x.png)  -->
-
 
 
 
