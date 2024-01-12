@@ -1,4 +1,4 @@
-# DSSG - Data Engineering Workshop
+# DSSG - Data Engineering Workshop 🪠
 
 Welcome to the Data Engineering Workshop organized by the Data Science for Social Good (DSSG) community. This workshop is designed to provide a hands-on introduction to the data engineering workflow and tools. The intended audience is data scientists and analysts who are interested in learning how to build simple data pipelines and data warehouses.
 

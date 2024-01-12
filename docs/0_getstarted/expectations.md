@@ -15,4 +15,7 @@
 - Setting up cloud infrastructure
 - Orchestrating complext data pipelines with lots of dependencies
 - Interacting with all the bells and whistles of the tools we will use. 
-
+**
+!!! Warning
+    We put this workshop together to help people get started with Data Engineering. Designing good material for workshops is quite some work. 
+    **This is the first iteration and we are happy to adapt the workshop interactively together with you**.
