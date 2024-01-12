@@ -2,26 +2,36 @@ site_name: DSSG Data Engineering Workshop
 repo_name: Github Repo
 repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
 nav:
-  - Home: index.md
-  - Usecase: 0_getstarted/usecase.md
-  - Setup:
+  - Getting Started:
+      - Overview: 0_getstarted/overview.md
+      - Expectations: 0_getstarted/expectations.md
+      - Usecase: 0_getstarted/usecase.md
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
-      - Datastores in Organizations: 1_store/data-in-orgs.md
+      - Data Stores in Organizations: 1_store/data-in-orgs.md
+      - Evolution of a Data-Org: 1_store/data-evolution.md
+      - Side Effects of Storing Data: 1_store/sideeffects-of-storing-data.md
       - Databases: 1_store/databases.md
+      - Why SQL is great: 1_store/why-sql-is-great.md
+      - 5-minutes of SQL: 1_store/5_minutes_of_sql.md
       - DuckDB: 1_store/duckdb.md
   - Extract and Load:
-      - Material: 2_extract/material.md
-  - Transform: 
+      - Data Sources: 2_extract/data-sources.md
+      - Data Destinations: 2_extract/data-destinations.md
+      - Connections and Jobs: 2_extract/connections.md
+      - Airbyte Walkthrough: 2_extract/material.md
+  - Transform:
       - Introduction to Data Transformation: 3_transform/1_transformation_introduction.md
       - A Data Transformation Workflow: 3_transform/2_data_transformation_workflow.md
       - DBT Introduction: 3_transform/3_dbt_introduction.md
       - DBT Basics: 3_transform/4_dbt_basics.md
   - Analyze:
-      - Material: 4_analyze/dashboarding-tools.md
+      - Dashboarding Tools: 4_analyze/dashboarding-tools.md
+      - The Thin Analytics Layer: 4_analyze/thin-analytics.md
+      - Metabase: 4_analyze/metabase.md
   - Outlook:
-      - Applying your new skills: 5_outlook/applying-your-skills.md
       - Learning More: 5_outlook/learning-more.md
+      - Applying your new skills: 5_outlook/applying-your-skills.md
 theme:
   language: en
   name: material
