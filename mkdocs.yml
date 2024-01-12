@@ -2,8 +2,8 @@ site_name: DSSG Data Engineering Workshop
 repo_name: Github Repo
 repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
 nav:
+  - Home: index.md
   - Getting Started:
-      - Overview: 0_getstarted/overview.md
       - Expectations: 0_getstarted/expectations.md
       - Usecase: 0_getstarted/usecase.md
       - Developer Setup: 0_getstarted/developer-setup.md
