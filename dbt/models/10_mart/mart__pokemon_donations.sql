@@ -9,3 +9,4 @@ from
     {{ ref("stg__pokemon__donations") }} pd 
 join 
     {{ ref("stg__pokemon__masterdata") }} pm
+    on pd.pokemon_id = pm.pokemon_id

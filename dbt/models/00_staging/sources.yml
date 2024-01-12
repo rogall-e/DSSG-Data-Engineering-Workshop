@@ -1,6 +1,6 @@
 version: 2
 sources:
-  - name: pokemon__masterdata
+  - name: pokemon_sources
     schema: public
     tables:
     - name: pokemon__masterdata
