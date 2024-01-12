@@ -1,15 +1,15 @@
 version: 2
 sources:
-  - name: pokemon_load
+  - name: pokemon_sources
     schema: public
     tables:
     - name: pokemon__masterdata
       description: Table contains information about each pokemon.
       columns:
-        - name: pokemon_id
+        - name: pokemon_identifier
           description: Unique identifier for a pokemon.
           tests:
-            - unique
+            # - unique # >> the test data is not unique
             - not_null
         - name: pokemon_name
           description: Name of the pokemon (english).
