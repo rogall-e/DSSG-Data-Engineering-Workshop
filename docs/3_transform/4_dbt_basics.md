@@ -1,6 +1,6 @@
 ## A quick Introduction to DBT
 
-DBT is pretty powerful and you can do a lot of fancy stuff with it. But let's keep it simple first and focus on the basic dbt project structure first:
+DBT is pretty powerful and you can do a lot of fancy stuff with it. But let's keep it simple first and focus on the basic **dbt project structure** first:
 
 ``` 
 my_dbt_project
