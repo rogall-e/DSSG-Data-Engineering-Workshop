@@ -2,6 +2,8 @@
 
 **[DBT](https://www.getdbt.com/)** is a tool, which helps us to manage our data transformation logic. 
 
+![airbyte csv source](../images/dbt.png)
+
 Everything you need are some `.sql` files, that hold your transformation logic, and DBT takes then care of the rest.
 
 While DBT has a lot of features, we want to highlight some of them here:
