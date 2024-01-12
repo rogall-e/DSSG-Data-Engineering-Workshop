@@ -12,7 +12,7 @@ While DBT has a lot of features, we want to highlight some of them here:
     
     DBT has knowledge of your data lineage and knows what comes first and what next. It executes your files in the correct order.
 
-- **TESTING:**
+- **TESTING**
 
     You can define and write tests and make sure, that your data quality is always at its best.
 
@@ -20,7 +20,7 @@ While DBT has a lot of features, we want to highlight some of them here:
 
     By adding column descriptions in your code, you can make sure, that everyone is one the same page about your data.
 
-- **JINJA:** 
+- **JINJA** 
 
     DBT facilitates the use of the DRY principle (*Don't Repeat Yourself*) by using `jinja templating`.
 

@@ -9,7 +9,7 @@ sources:
         - name: pokemon_identifier
           description: Unique identifier for a pokemon.
           tests:
-            # - unique >> the test data is not unique
+            # - unique # >> the test data is not unique
             - not_null
         - name: pokemon_name
           description: Name of the pokemon (english).

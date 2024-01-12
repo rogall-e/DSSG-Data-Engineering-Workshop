@@ -5,6 +5,6 @@ select
 from 
     {{ source("pokemon_sources", "pokemon__masterdata",) }}
 group by 
-    pokemon_id,
+    pokemon_identifier,
     pokemon_name,
     pokemon_type

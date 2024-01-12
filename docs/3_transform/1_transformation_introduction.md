@@ -4,7 +4,7 @@ While it's nice to have some raw data in place, in its current state, it won't h
 
 - `How many Pokemon donated?`
 - `How much money did we collect in total?`
-- `What was the average donation per Pokemon?`
+- `Which pokemon type donated on average the most?`
 
 To answer these questions, we need to *crunch* our data first and make it more useable for anaylsis. 
 
