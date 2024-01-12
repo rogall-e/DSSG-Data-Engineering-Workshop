@@ -18,7 +18,7 @@ nav:
   - Extract and Load:
       - Data Sources: 2_extract/data-sources.md
       - Data Destinations: 2_extract/data-destinations.md
-      - Connections and Jobs: 2_extract/
+      - Connections and Jobs: 2_extract/connections.md
       - Airbyte Walkthrough: 2_extract/material.md
   - Transform:
       - Introduction to Data Transformation: 3_transform/1_transformation_introduction.md
@@ -28,9 +28,10 @@ nav:
   - Analyze:
       - Dashboarding Tools: 4_analyze/dashboarding-tools.md
       - The Thin Analytics Layer: 4_analyze/thin-analytics.md
+      - Metabase: 4_analyze/metabase.md
   - Outlook:
-      - Applying your new skills: 5_outlook/applying-your-skills.md
       - Learning More: 5_outlook/learning-more.md
+      - Applying your new skills: 5_outlook/applying-your-skills.md
 theme:
   language: en
   name: material
