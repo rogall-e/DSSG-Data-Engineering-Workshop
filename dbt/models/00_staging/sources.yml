@@ -1,0 +1,40 @@
+version: 2
+sources:
+  - name: pokemon__masterdata
+    schema: public
+    tables:
+    - name: pokemon__masterdata
+      description: Table contains information about each pokemon.
+      columns:
+        - name: pokemon_id
+          description: Unique identifier for a pokemon.
+          tests:
+            - unique
+            - not_null
+        - name: pokemon_name
+          description: Name of the pokemon (english).
+          tests:
+            - not_null
+        - name: pokemon_type
+          description: Primary type of a pokemon (e.g. 'fire', 'water', 'grass', etc.).
+          tests:
+            - not_null
+    - name: pokemon__donations
+      description: Table contains information about daily donations per pokemon ID (Note - each individual pokemon can only donate once)
+      columns:
+        - name: pokemon_id
+          description: Unique identifier for a pokemon.
+          tests:
+            - not_null
+        - name: donation_date
+          description: Date of a certain donation (YYYY-MM-DD).
+          tests:
+            - not_null
+        - name: donation_number_of_pokemon
+          description: Number of pokemon, that donated.
+          tests:
+            - not_null
+        - name: donation_amount_eur
+          description: Amount of donation in EUR.
+          tests:
+            - not_null

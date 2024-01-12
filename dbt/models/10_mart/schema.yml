@@ -1,0 +1,30 @@
+version: 2
+models:
+- name: mart__pokemon_donations
+  description: Table contains all donations per pokemon and day combined with pokemon masterdata.
+  columns:
+    - name: pokemon_id
+      description: Unique identifier for a pokemon.
+      tests:
+        - unique
+        - not_null
+    - name: pokemon_name
+      description: Name of the pokemon (english).
+      tests:
+        - not_null
+    - name: pokemon_type
+      description: Primary type of a pokemon (e.g. 'fire', 'water', 'grass', etc.).
+      tests:
+        - not_null
+    - name: donation_date
+      description: Date of a certain donation (YYYY-MM-DD).
+      tests:
+        - not_null
+    - name: donation_number_of_pokemon
+      description: Number of pokemon, that donated.
+      tests:
+        - not_null
+    - name: donation_amount_eur
+      description: Amount of donation in EUR.
+      tests:
+        - not_null

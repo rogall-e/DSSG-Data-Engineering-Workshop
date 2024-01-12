@@ -1,6 +1,6 @@
 version: 2
-sources:
-  - name: pokemon_load
+models:
+  - name: stg__pokemon__donations
     schema: public
     tables:
     - name: pokemon__masterdata
@@ -19,7 +19,7 @@ sources:
           description: Primary type of a pokemon (e.g. 'fire', 'water', 'grass', etc.).
           tests:
             - not_null
-    - name: pokemon__donations
+    - name: stg__pokemon__masterdata
       description: Table contains information about daily donations per pokemon ID (Note - each individual pokemon can only donate once)
       columns:
         - name: pokemon_id
