@@ -3,11 +3,12 @@ repo_name: Github Repo
 repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
 nav:
   - Getting Started:
-      - Home: 0_getstarted/index.md
+      - Overview: 0_getstarted/overview.md
+      - Expectations: 0_getstarted/expactations.md
       - Usecase: 0_getstarted/usecase.md
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
-      - Datastores in Organizations: 1_store/data-in-orgs.md
+      - Data Stores in Organizations: 1_store/data-in-orgs.md
       - Evolution of a Data-Org: 1_store/data-evolution.md
       - Data in Small Orgs: 1_store/data-in-small-orgs.md
       - Data in Bigger Orgs: 1_store/data-in-big-orgs.md
@@ -20,12 +21,15 @@ nav:
       - Data Sources: 2_extract/data-sources.md
       - Data Destinations: 2_extract/data-destinations.md
       - Connections and Jobs: 2_extract/
-      - Material: 2_extract/material.md
+      - Airbyte Walkthrough: 2_extract/material.md
   - Transform:
-      - Material: 3_transform/material.md
+      - Introduction to Data Transformation: 3_transform/1_transformation_introduction.md
+      - A Data Transformation Workflow: 3_transform/2_data_transformation_workflow.md
+      - DBT Introduction: 3_transform/3_dbt_introduction.md
+      - DBT Basics: 3_transform/4_dbt_basics.md
   - Analyze:
-      - The Thin Analytics Layer:
-          - Material: 4_analyze/dashboarding-tools.md
+      - Dashboarding Tools: 4_analyze/dashboarding-tools.md
+      - The Thin Analytics Layer: 4_analyze/thin-analytics.md
   - Outlook:
       - Applying your new skills: 5_outlook/applying-your-skills.md
       - Learning More: 5_outlook/learning-more.md
