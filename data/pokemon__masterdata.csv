@@ -1,5 +1,6 @@
-pokemon_id,pokemon_name,pokemon_type
+pokemon_identifier,pokemon_name,pokemon_type
 1,Bulbasaur,grass
+2,Ivysaur,grass
 2,Ivysaur,grass
 3,Venusaur,grass
 4,Charmander,fire
