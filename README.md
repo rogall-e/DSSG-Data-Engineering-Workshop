@@ -6,20 +6,6 @@ Welcome to the Data Engineering Workshop organized by the Data Science for Socia
 
 For this workshop we prepared a documentation page that will guide us through the different modules and exercises. You can find it [here](https://rogall-e.github.io/DSSG-Data-Engineering-Workshop/).
 
-## What to expect
-We are going to build a simple data pipeline that extracts data from a public API, stores it in a database, and makes it available for analysis. We will use a variety of tools to achieve this goal and we will discuss the advantages and disadvantages of each approach. The workshop will be a mix of presentations and hands-on exercises.
-
-- Writing SQL queries
-- Hearing some technical jargon like API, ETL, ELT, Data Warehouse, Data Lake, etc. We will explain what all of these terms mean.
-- Moving Data from A to B
-
-
-## What not to expect
-- Buildig a production-ready data pipeline.
-- Interacting with all the bells and whistles of the tools we will use. We will focus on the core functionality.
-- Lots to time to discuss the pros and cons of each tool. We will provide some first impressions and resources for further learning.
-
-
 ## Timetable
 | Session                                              | Time          | Description                                                                                                                   | Tool             |
 |------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|------------------|
@@ -29,4 +15,17 @@ We are going to build a simple data pipeline that extracts data from a public AP
 | Transforming                                         | 11:30 - 12:30 | Shaping raw data from various sources into a unified view that can be interpreted by stakeholders                            | dbt              |
 | Making data accessible                               | 12:45 - 13:15 | Providing interpretation and data access to the rest of the organization                                                     | Metabase         |
 | Follow Up Questions and next steps                   | 13:15         | Participants can ask questions and receive guidance on recommended next steps and resources for further learning in data engineering |                  |
+
+## We will learn to:
+- Set up a basic Analytical Database using DuckDB
+- Read some data from various sources into our database with Airbyte
+- Transform the data into a unified view with dbt
+- Attach a visualization tool to the database using Metabase
+
+## We are **not** touching:
+- Buildig a production-ready data pipeline.
+- Setting up cloud infrastructure
+- Orchestrating complext data pipelines with lots of dependencies
+- Interacting with all the bells and whistles of the tools we will use. 
+
 

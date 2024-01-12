@@ -4,7 +4,7 @@
 ![overview-diagram](../assets/img/workshop-scope.png) 
 
 ---
-## We are learning to:
+## We will learn to:
 - Set up a basic Analytical Database using DuckDB
 - Read some data from various sources into our database with Airbyte
 - Transform the data into a unified view with dbt
