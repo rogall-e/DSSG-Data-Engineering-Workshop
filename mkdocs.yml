@@ -2,20 +2,30 @@ site_name: DSSG Data Engineering Workshop
 repo_name: Github Repo
 repo_url: https://github.com/rogall-e/DSSG-Data-Engineering-Workshop
 nav:
-  - Home: index.md
-  - Usecase: 0_getstarted/usecase.md
-  - Setup:
+  - Getting Started:
+      - Home: 0_getstarted/index.md
+      - Usecase: 0_getstarted/usecase.md
       - Developer Setup: 0_getstarted/developer-setup.md
   - Storing Data:
       - Datastores in Organizations: 1_store/data-in-orgs.md
+      - Evolution of a Data-Org: 1_store/data-evolution.md
+      - Data in Small Orgs: 1_store/data-in-small-orgs.md
+      - Data in Bigger Orgs: 1_store/data-in-big-orgs.md
+      - Side Effects of Storing Data: 1_store/sideeffects-of-storing-data.md
       - Databases: 1_store/databases.md
+      - Why SQL is great: 1_store/why-sql-is-great.md
+      - 5-minutes of SQL: 1_store/5_minutes_of_sql.md
       - DuckDB: 1_store/duckdb.md
   - Extract and Load:
+      - Data Sources: 2_extract/data-sources.md
+      - Data Destinations: 2_extract/data-destinations.md
+      - Connections and Jobs: 2_extract/
       - Material: 2_extract/material.md
   - Transform:
       - Material: 3_transform/material.md
   - Analyze:
-      - Material: 4_analyze/dashboarding-tools.md
+      - The Thin Analytics Layer:
+          - Material: 4_analyze/dashboarding-tools.md
   - Outlook:
       - Applying your new skills: 5_outlook/applying-your-skills.md
       - Learning More: 5_outlook/learning-more.md

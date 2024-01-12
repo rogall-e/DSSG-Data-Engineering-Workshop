@@ -16,6 +16,9 @@ Assuming the core business of an organisation is not data! Then most potentially
 
 ### Medium (Non Tech) Organisations (50-500 people)
 
+
+
+
 ### Big/Corporate (Non Tech) Organisations (500+ people)
 
 ![big-corp-xkcd](https://imgs.xkcd.com/comics/machine_learning_2x.png)
