@@ -1,4 +1,4 @@
-duckdb_test:
+postgres:
   target: dev
   outputs:
     dev:

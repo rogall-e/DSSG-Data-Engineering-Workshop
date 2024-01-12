@@ -13,10 +13,10 @@ nav:
   - Extract and Load:
       - Material: 2_extract/material.md
   - Transform: 
-      - Material: 3_transform/0_intro_transformation.md
-      - From Raw to Metric: 3_transform/1_from_raw_to_metric.md
-      - DBT: 3_transform/2_dbt.md
-      - A DBT Workflow: 3_transform/3_a_dbt_workflow.md
+      - Introduction to Data Transformation: 3_transform/1_transformation_introduction.md
+      - A Data Transformation Workflow: 3_transform/2_data_transformation_workflow.md
+      - DBT Introduction: 3_transform/3_dbt_introduction.md
+      - DBT Basics: 3_transform/4_dbt_basics.md
   - Analyze:
       - Material: 4_analyze/dashboarding-tools.md
   - Outlook:
