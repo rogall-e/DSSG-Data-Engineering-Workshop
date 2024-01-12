@@ -19,6 +19,12 @@
 
     ![small-data-orgs-img](../assets/img/small-data-orgs.png)
 
+=== "Small/Mid Tech Orgs"
+    - Tech Teams having their own databases to fullfill operations
+    - Data is already structured and can be retrieved from databases or APIs
+
+    ![small-data-orgs-img](../assets/img/mid-tech-org.png)
+
 === "Decentralized Tech Orgs"
     - Multiple Tech and Non Tech Domains having different data needs
     - Data is not used for analytical purposes only.
