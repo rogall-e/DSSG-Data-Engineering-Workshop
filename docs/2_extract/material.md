@@ -2,10 +2,6 @@
 
 Extracting and loading data is the process of getting data from a source and loading it into a target. The source can be a file, a database, an API, or any other source of data. The target can be a file, a database, or any other target that can store data.
 
-
-## Why you should not build things yourself
-
-
 ## Airbyte Intro
 
 We will use Airbyte for the extraction and loading of data. Airbyte is an open-source data integration platform that helps you consolidate data from different sources and load it into a destination of your choice. It can be either self-hosted on your own infrastructure or you can use their cloud version. 

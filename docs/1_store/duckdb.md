@@ -72,4 +72,4 @@ con.execute('CREATE TABLE df_table AS SELECT * FROM df')
 ``` 
 
 
-If you want to try this out yourself and also see how it integrates into jupyter notebooks, have a look into the [Intro to DuckDB juptyer notebook](../../Intro_to_duckdb.ipynb).
+If you want to try this out yourself and also see how it integrates into jupyter notebooks, have a look into the [Intro to DuckDB juptyer notebook](https://github.com/rogall-e/DSSG-Data-Engineering-Workshop/blob/main/Intro_to_duckdb.ipynb).

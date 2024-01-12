@@ -2,8 +2,7 @@
 
 !!! note "Disclaimer"
     
-    I am sketching a totally artificial and simplified evolution of differen stages of  data in organisations. The goal is to show the different phases of data engineering and the different challenges that come with it.
-
+    I am sketching a totally artificial and simplified evolution of stages for data in organisations. The goal is to show the different phases of data engineering and the different challenges that come with it.
 
 === "Small Orgs - No Data Person"
     - Analytical needs are solved via direct communication
