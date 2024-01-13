@@ -2,7 +2,7 @@
 
 I hope you enjoyed the workshop and learned something new. Now it is time to apply your new skills. Assume you have a small organisation you want to help out. Here are a few things to consider when you want to help them to structure their data needs:
 
-!!! tip "There is no silver bulled for data processing. Just try to keep things as simple as possible"
+!!! tip "There is no silver bullet for data processing. Just try to keep things as simple as possible"
 
 ??? question "We have no access to cloud infrastructure. What can we do?"
 
