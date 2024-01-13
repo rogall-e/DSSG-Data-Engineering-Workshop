@@ -20,7 +20,7 @@ If you want a bigger curriculum, we recommend you to take a look at the followin
 - [DataTalks.Club Data Engineering Bootcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)
 - In Person Bootcamp (e.g. Neue Fische Bootcamp)
 
-## Exercices
+## Exercises
 We hope that you liked the Pokemon example we covered today. As you can imagine there are lots of things that we had no time to cover. So here are a few ideas for extending our data platform:
 
 - Add a new source to Airbyte by direcly calling the Pokemon API. You can find the documentation [here](https://pokeapi.co/docs/v2). To have a quick walkthrough of how to add a new source to Airbyte, you can take a look at the [docs](https://docs.airbyte.io/tutorials/building-a-connector).
