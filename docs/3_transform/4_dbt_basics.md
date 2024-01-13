@@ -120,7 +120,7 @@ FROM
 
 ---
 
-### `dbt run`
+### Running dbt
 
 There are multiple DBT commands to choose from. Here are the basic ones:
 
@@ -131,3 +131,23 @@ dbt build   # runs both commands for each model
 ```
 
 With `dbt run`, dbt checks your models directory and runs all of your models in the correct order.
+
+If you want to select a specific model or directory you can use `--select`:
+
+```bash
+dbt build --select 1_staging  # runs and tests all models in the 1_staging directory
+dbt build --select stg__pokemon__donations # rund and tests ONLY the model called stg__pokemon__donations
+```
+
+You can also create a webserver with all of your documentation:
+
+```bash
+dbt docs generate 
+dbt docs serve
+```
+
+If you want to compile your jinja sql model, use:
+
+```bash
+dbt compile --select stg__pokemon__donations # compiles the models outputs the actual sql that runs on your database
+```
