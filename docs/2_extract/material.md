@@ -47,7 +47,7 @@ host: localhost
 port: 5432
 database: pokemon
 user: postgres
-password: password
+password: postgres
 ```
 
 In Airbyte click on the `Destinations` tab and then on the `Create Destination` button. Select `Postgres` as destination and enter the credentials for the database (the password is under `Optional fields`). Afterwards click on the `Set up destination` button to create the destination.
