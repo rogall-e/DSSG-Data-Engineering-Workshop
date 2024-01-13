@@ -13,7 +13,7 @@
 ## We are **not** touching:
 - Buildig a production-ready data pipeline.
 - Setting up cloud infrastructure
-- Orchestrating complext data pipelines with lots of dependencies
+- Orchestrating complex data pipelines with lots of dependencies
 - Interacting with all the bells and whistles of the tools we will use. 
 
 !!! Warning
